@@ -1,0 +1,79 @@
+.section {
+    margin-bottom: 128px;
+}
+
+.access_section {
+    margin: 80px 0;
+}
+
+.access_block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.access {
+    width: 550px;
+}
+
+.access > h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 57px;
+    margin-bottom: 12px;
+}
+
+.access > p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 42px;
+}
+
+.access > span.error {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+    margin-bottom: 4px;
+}
+
+
+.access_items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.access_items > input {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid rgba(131, 131, 131, 1);
+    color: rgba(131, 131, 131, 1);
+    border-radius: 20px;
+
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 23px;
+
+}
+
+.access_items > input.error {
+    border: 1px solid red;
+}
+
+.access_items > input:focus {
+    outline: none;
+}
+
+.access_items > button {
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    background-color: rgba(85, 82, 232, 1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    border-radius: 20px;
+    padding: 18px;
+}

@@ -1,0 +1,30 @@
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.label {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+    font-size: 13px;
+
+    border-bottom: 1px var(--primary-admin-color) solid;
+    cursor: pointer;
+}
+
+.label input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.label input[type=file]:focus {
+    background-color: #0c0c14;
+    border: 1px solid var(--primary-admin-color);
+}

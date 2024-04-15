@@ -1,0 +1,64 @@
+.block {
+    position: relative;
+}
+
+.title {
+    position: relative;
+    font-size: 13px;
+    cursor: pointer;
+
+    border-bottom: 1px solid var(--primary-admin-ui);
+    padding: 6px;
+}
+
+.list {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 141px;
+    position: absolute;
+    border: 1px solid var(--primary-admin-ui);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background-color: var(--primary-backgorund);
+    z-index: 1;
+}
+
+.list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: var(--primary-admin-ui); /* цвет дорожки */
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: var(--primary-admin-items); /* цвет плашки */
+    border-radius: 4px; /* закругления плашки */
+    border: 3px solid var(--primary-admin-items); /* padding вокруг плашки */
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+
+    transition: 0.3s all;
+}
+
+.arrow.active {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.item {
+    cursor: pointer;
+    padding: 6px;
+
+
+    background-color: transparent;
+    transition: 0.3s background-color;
+}
+
+.item:hover {
+    background-color: rgba(124, 124, 124, 0.3);
+}

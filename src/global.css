@@ -1,0 +1,109 @@
+/*@font-face {*/
+/*    font-family: 'StemFont';*/
+/*    src: url('./fonts/StemSemiLight.woff');*/
+/*    font-weight: 300;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'StemFont';*/
+/*    src: url('./fonts/StemMedium.woff');*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'StemFont';*/
+/*    src: url('./fonts/StemBold.woff');*/
+/*    font-weight: 700;*/
+/*}*/
+
+@font-face {
+    font-family: 'StemFont';
+    src: url('./fonts/Stem-SemiLight.woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'StemFont';
+    src: url('./fonts/Stem-Light.woff2');
+    font-weight: 350;
+}
+
+@font-face {
+    font-family: 'StemFont';
+    src: url('./fonts/Stem-Medium.woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'StemFont';
+    src: url('./fonts/Stem-Bold.woff2');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+body { /*font-family: "Roboto", sans-serif;*/
+    background-color: #F7F9FD;
+    font-family: "StemFont", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input::placeholder {
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    height: 10px;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: lightgray;
+}
+
+:root {
+    --toastify-color-light: var(--primary-backgorund);
+
+    --primary-backgorund: rgba(241, 241, 241, 255);
+    --primary-admin-ui: #1b1340;
+    --primary-admin-color: #0c0c14;
+    --primary-admin-items: #6d4aff;
+    --primary-admin-item-hover: #7c5cff;
+    --shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.25);
+    /*--shadow-black: 5px 0px 8px 1px rgba(34, 60, 80, 0.2);*/
+}

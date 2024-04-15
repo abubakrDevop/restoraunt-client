@@ -1,0 +1,47 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.switch_block {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.switch_block > span {
+    font-size: 18px;
+}
+
+.switch {
+    position: relative;
+    display: inline-flex;
+    height: 22px;
+    width: 44px;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 1px solid transparent;
+    background-color: var(--primary-admin-ui);
+    transition: 0.2s all;
+}
+
+.switch_button {
+    left: 2px;
+    top: 50%;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+    height: 18px;
+    width: 18px;
+    border-radius: 1em;
+    background-color: lightcoral;
+    transition: 0.2s all ease-in-out;
+
+    transform: translateY(-50%);
+}
+
+.switch_button.active {
+    background-color: var(--primary-admin-items);
+    left: 22px;
+}

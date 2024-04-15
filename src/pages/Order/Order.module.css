@@ -1,0 +1,43 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.order_item > p {
+    margin-bottom: 4px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.title > h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.item {
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    background-color: var(--primary-admin-items);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.item.green {
+    background-color: green;
+}
+
+.item.blue {
+    background-color: blue;
+}
